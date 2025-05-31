@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FEEDBACK FORM</title>
+        <style>
+            form{
+                width: 300px;
+                margin:auto;
+                border: 2px;
+                background-color: aquamarine;
+                box-shadow: 2px 4px 10px 0px red;
+                padding: 10px;
+            }
+            label{
+                display: block;
+                margin-top: 10px;
+                font-weight:bold 
+
+            }
+            h4{text-align: center;}
+        </style>
+        <body>
+            
+            <form>
+                <h4>FEEDBACK FORM</h4>
+                <input type="text" placeholder="Your Name"/>
+                <label for=" username">Username:</label><br>
+
+                <input type="text" placeholder="xyz@gmail.com"/>
+                <label for="Email id">Email id</label><br>
+                
+                
+    
+                <textarea id="Message" name="Message" rows="5" cols="10"></textarea>
+                <label for="Message">Message</label><br>
+
+                <label>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="Male" />Male
+                    
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female" /> Female
+                </label>
+                <fieldset>
+                    <legend>
+                        Personal Info
+                    </legend>
+                    <label>
+                        Name
+                    </label>
+                    <input type="text" name="name"/>
+                    <br>
+                     
+                    <label> Email:</label>
+                    <input type="Email" name="Email"/>
+                
+                </fieldset>
+                <form action="/submit-form" method="post">
+                    <input type="text" name="name" />
+                    <button type=" SUBMIT"> SUBMIT</button>
+                </form>
+
+
+            </form>
+        </body>
+        
+    </head>
+</html>
