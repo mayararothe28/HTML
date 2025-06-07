@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <title>DAY 10</title>
+    <style>
+        .box1 {
+            margin-top: 20px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            color: blueviolet;
+            display: inline-block;
+            background-color: rgb(209, 182, 235);
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .box2 {
+            margin-right: 50px;
+            border: 2px solid;
+            height: 100px;
+            width: 100px;
+            color: brown;
+            display: inline-block;
+            background-color: rgb(213, 189, 189);
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            z-index: 3;
+
+        }
+
+        .box3 {
+            margin-left: 2px;
+            border: 2px solid;
+            color: blue;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: rgb(113, 113, 176);
+            position: absolute;
+            z-index: 1;
+
+
+        }
+
+        .parentcontainer {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            border: 1px solid red;
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            z-index: 2;
+        }
+
+        .childrencomponent {
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            z-index: 1;
+
+        }
+    </style>
+</head>
+
+<body style="height: 1500px;">
+    <!-- <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div> -->
+    <div style="position: relative;">
+        <div class="parentcontainer" style="position: relative;">
+            <div class="childrencomponent" style="position: relative;">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

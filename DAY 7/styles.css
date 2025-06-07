@@ -1,0 +1,16 @@
+  h1 {
+      font-weight: bold;
+
+  }
+
+  p {
+
+      background-color: rgba(red, green, blue, alpha);
+      /* letter-spacing: 10px; */
+      line-height: 50px;
+
+  }
+
+  .text-style {
+      font-style: italic;
+  }
