@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .Pricing {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+            align-self: flex-end;
+            
+
+        }
+
+        .card {
+            flex: 1;
+            padding: 30px;
+            background: #eeee;
+            border-radius: 10px;
+            align-items: center;
+            
+
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+
+        }
+
+        .cash {
+            flex: 1;
+            padding: 30px;
+            background: #96f072ee;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Pricing">
+        <div class="card" style="align-content: center;">Base</div>
+        <div class="card">Pro</div>
+        <div class="card">Premium</div>
+    </div><br><br><br>
+
+    <div class="container">
+        <div class="cash">Base</div>
+        <div class="cash">Pro</div>
+        <div class="cash" style="flex-shrink:1;" >Premium</div>
+    </div>
+
+
+</body>
+
+</html>
